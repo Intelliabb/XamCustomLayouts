@@ -19,6 +19,8 @@ Blog post: <link>
 3. Content View (`ContentPresenter`)
 4. Action View (`ContentPresenter`)
 
+All parts are optional. You can mix and match to your needs.
+
 ## Usage
 
 ### In XAML
