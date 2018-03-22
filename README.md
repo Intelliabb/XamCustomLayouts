@@ -3,7 +3,12 @@ Xamarin.Forms Custom Layouts - Cards
 
 Blog post: <link>
 
-<screenshots>
+iOS:
+![iOS](/Screenshots/ios.png)
+
+Android:
+![Android](/Screenshots/android.png)
+
 
 ## Card View
 
