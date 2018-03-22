@@ -44,7 +44,12 @@ then,
 var card = new ShadedCard {
   Icon = "icon.png",
   Title = "My Card",
-  ContentView = . . .
+  ContentView = new StackLayout {
+    . . .
+  },
+  ActionView = new StackLayout {
+    . . .
+  },
 };
 
 // assuming you have a child-bearing container as parent,
