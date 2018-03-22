@@ -58,4 +58,12 @@ var card = new ShadedCard {
 Parent.Children.Add(card);
 ```
 
+## MVVM DataBinding
+If you are using MVVM in your Xamarin.Forms app (as you should :)), you will find that binding to a control inside a view that is child of this card view, the implicit bindings will not work as the child control does not have access to grandparent (page) and it's binding context. So, you will have to explicitly bind to the page's binding context by simply doing the following,
+
+1. Name your page. i.e. `<... x:Name="MyPage"/>`
+2. Bind explicitly. i.e. `<Label Text="{Binding BindingContext.PropertyName, Source={x:Reference MyPage}}"/>`
+
+That is it. You just told your grand child control/view to bind to `MyPage`'s `BindingContext`, which is your `ViewModel`.
+
 Enjoy!
