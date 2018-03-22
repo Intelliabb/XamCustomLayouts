@@ -5,11 +5,11 @@ Blog post: <link>
 
 ## Card View
 
-###iOS
+### iOS
 
 ![iOS](/Screenshots/ios.png)
 
-###Android
+### Android
 
 ![Android](/Screenshots/android.png)
 
