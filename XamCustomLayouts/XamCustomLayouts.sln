@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCustomLayouts.iOS", "iOS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCustomLayouts.Droid", "Droid\XamCustomLayouts.Droid.csproj", "{22228E46-69F7-40F0-A2DC-3AA365105E61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCustomLayouts.Controls", "XamCustomLayouts.Controls\XamCustomLayouts.Controls.csproj", "{476A046E-2693-48CB-BF30-F18FD5296DF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{22228E46-69F7-40F0-A2DC-3AA365105E61}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{22228E46-69F7-40F0-A2DC-3AA365105E61}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{22228E46-69F7-40F0-A2DC-3AA365105E61}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Release|iPhone.Build.0 = Release|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{476A046E-2693-48CB-BF30-F18FD5296DF7}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal

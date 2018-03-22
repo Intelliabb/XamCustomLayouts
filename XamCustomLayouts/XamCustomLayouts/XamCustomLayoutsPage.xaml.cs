@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XamCustomLayouts.Controls;
 
 namespace XamCustomLayouts
 {
@@ -7,6 +8,7 @@ namespace XamCustomLayouts
         public XamCustomLayoutsPage()
         {
             InitializeComponent();
+            var card = new ShadedCard();
         }
     }
 }

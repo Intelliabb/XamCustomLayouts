@@ -1,4 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XamCustomLayouts" x:Class="XamCustomLayouts.XamCustomLayoutsPage">
-    <Label Text="Welcome to intelliAbb!" VerticalOptions="Center" HorizontalOptions="Center" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:XamCustomLayouts" 
+             xmlns:controls="clr-namespace:XamCustomLayouts.Controls;assembly=XamCustomLayouts.Controls" 
+             x:Class="XamCustomLayouts.XamCustomLayoutsPage" BackgroundColor="{StaticResource MyPageBackground}">
+
+    <ScrollView>
+        <StackLayout x:Name="MainStack" VerticalOptions="Center">
+            <controls:ShadedCard Icon="profile.png" Title="Card With Shadow" CornerRadius="0" HasShadow="true" TitleStyle="{StaticResource SectionTitleText}">
+                <controls:ShadedCard.CardContent>
+                    <Label Text="Welcome to intelliAbb!" VerticalOptions="Center" HorizontalOptions="Center" />
+                </controls:ShadedCard.CardContent>
+                <controls:ShadedCard.ActionView>
+                    <Button Text="Update"/>
+                </controls:ShadedCard.ActionView>
+            </controls:ShadedCard>
+
+            <controls:ShadedCard Icon="playlist.png" Title="Card Without Shadow" HasShadow="false"  CornerRadius="0" TitleStyle="{StaticResource SectionTitleText}">
+                <controls:ShadedCard.CardContent>
+                    <Label Text="Welcome to intelliAbb!" VerticalOptions="Center" HorizontalOptions="Center" />
+                </controls:ShadedCard.CardContent>
+                <controls:ShadedCard.ActionView>
+                    <Button Text="Add to queue"/>
+                </controls:ShadedCard.ActionView>
+            </controls:ShadedCard>
+
+            <controls:ShadedCard Title="Title Only Card" CornerRadius="0" HasShadow="false"  TitleStyle="{StaticResource SectionTitleText}">
+                <controls:ShadedCard.CardContent>
+                    <Label Text="Welcome to intelliAbb!" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,4" />
+                </controls:ShadedCard.CardContent>
+                <controls:ShadedCard.ActionView>
+                    <StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="{StaticResource MyAccent}"/>
+                        <StackLayout Orientation="Horizontal" Padding="8,0,0,8">
+                            <Label Text="Manage Account" Style="{StaticResource LinkStyle}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </controls:ShadedCard.ActionView>
+            </controls:ShadedCard>
+
+            <controls:ShadedCard CornerRadius="0" HasShadow="false"  TitleStyle="{StaticResource SectionTitleText}">
+                <controls:ShadedCard.CardContent>
+                    <Label Text="Content only with action view" VerticalOptions="Center" HorizontalOptions="Center" />
+                </controls:ShadedCard.CardContent>
+                <controls:ShadedCard.ActionView>
+                    <Grid ColumnSpacing="20">
+                        <Button Text="Play"/>
+                        <Button Text="Share" Grid.Column="1"/>
+                    </Grid>
+                </controls:ShadedCard.ActionView>
+            </controls:ShadedCard>
+
+            <controls:ShadedCard CornerRadius="0" HasShadow="false"  TitleStyle="{StaticResource SectionTitleText}">
+                <controls:ShadedCard.CardContent>
+                    <Label Text="Content only card" VerticalOptions="Center" HorizontalOptions="Center" />
+                </controls:ShadedCard.CardContent>
+            </controls:ShadedCard>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

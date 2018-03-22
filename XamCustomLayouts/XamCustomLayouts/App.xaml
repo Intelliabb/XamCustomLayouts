@@ -1,6 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamCustomLayouts.App">
     <Application.Resources>
-        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <Color x:Key="MyAccent">#E16C51</Color>
+            <Color x:Key="MyWhite">#FFFFFF</Color>
+            <Color x:Key="MyPageBackground">#E6E6E6</Color>
+            <Color x:Key="MyCardBackground">#FFFFFF</Color>
+            
+            <Style x:Key="SectionTitleText" TargetType="Label">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="{StaticResource MyAccent}"/>
+            </Style>
+            
+            <Style x:Key="LinkStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="{StaticResource MyAccent}"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource MyAccent}"/>
+                <Setter Property="TextColor" Value="{StaticResource MyWhite}"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
