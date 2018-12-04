@@ -1,6 +1,7 @@
 # Card View Using Custom Layouts In Xamarin.Forms
 This sample shows how to create a custom layout (container) that can be reused in the app and can take any `View` as child.
 
+Download NuGet Package: https://www.nuget.org/packages/IntelliAbb.Xamarin.Controls
 Blog post: https://intelliabb.com/2018/03/21/card-view-for-xamarin-forms-using-custom-layouts/
 
 ## Card View
